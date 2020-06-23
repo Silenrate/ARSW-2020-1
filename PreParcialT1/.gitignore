@@ -1,0 +1,7 @@
+*.xml
+*.xml
+*.class
+PrimeFinderDesktopTool/target
+PrimeFinderDesktopTool/.idea/
+PrimeFinderDesktopTool/*.iml
+PrimesAPI/target

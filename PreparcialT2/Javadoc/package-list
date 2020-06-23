@@ -1,0 +1,8 @@
+edu.eci.arsw.airportfinder
+edu.eci.arsw.airportfinder.cache
+edu.eci.arsw.airportfinder.concurrent
+edu.eci.arsw.airportfinder.connection
+edu.eci.arsw.airportfinder.controller
+edu.eci.arsw.airportfinder.model
+edu.eci.arsw.airportfinder.service
+edu.eci.arsw.airportfinder.websocket

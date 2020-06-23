@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AirportFinder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="/apiclient.js"></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            background-color: grey;
+        }
+        .body {
+            background-color: #B8DAF0;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1>Airport Finder Tool</h1>
+
+    <input id="name" type="text" placeholder="Place to search"/>
+    <button onclick="app.buscar($('#name').val())" class="btn btn-primary">Search</button>
+    <table class="table ">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Airport ID</th>
+            <th scope="col">Airport Name</th>
+            <th scope="col">City Name</th>
+            <th scope="col">CountryCode</th>
+        </tr>
+        </thead>
+    </table>
+    <div id="map"></div>
+</body>
+</html>

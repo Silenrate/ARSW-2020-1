@@ -1,0 +1,6 @@
+edu.eci.arsw.covid19
+edu.eci.arsw.covid19.cache
+edu.eci.arsw.covid19.connection
+edu.eci.arsw.covid19.controller
+edu.eci.arsw.covid19.model
+edu.eci.arsw.covid19.service

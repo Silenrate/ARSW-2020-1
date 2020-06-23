@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Covid19 Cases</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="/js/gmap.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/apiclient.js"></script>
+    <style>
+        #map_canvas {
+            height: 400px;
+            width: 100%;
+            background-color: grey;
+        }
+        .body {
+            background-color: #B8DAF0;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1>Covid19 Cases Tool</h1>
+
+    <input id="name" type="text" placeholder="Country to search"/>
+    <button onclick="app.buscar($('#name').val())" class="btn btn-primary">Search</button>
+    <table class="table ">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Province</th>
+            <th scope="col">Recovered</th>
+            <th scope="col">Confirmed</th>
+            <th scope="col">Deaths</th>
+        </tr>
+        </thead>
+    </table>
+    <h3 id="total">Confirmed Cases: 0</h3>
+    <div id="map_canvas"></div>
+</body>
+</html>

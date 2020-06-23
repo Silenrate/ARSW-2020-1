@@ -1,0 +1,7 @@
+
+
+Para el punto 10, vemos que algunos inmortales que ya se encuentran muertos siguen peleando y recuperando vida, 
+como si "revivieran".Esto se debe a que puede morir en un hilo pero en otro estar atacando y quedar con mas vida (race condition),
+además si lo eliminamos de la lista se pueden generar errores en los indices de la lista por el mismo motivo ya mencionado.
+Para evitar que esto suceda, utilizamos CopyOnWriteArrayList en lugar de una lista normal y hacemos el .remove(object)
+de los inmortales que no tienen vida.

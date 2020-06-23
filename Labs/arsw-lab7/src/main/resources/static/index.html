@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2016 Pivotal Software, Inc.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+        <title>CollabPaint</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+        <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+        <script src="/app.js"></script>
+        <style>
+            .canvas{
+                border:1px solid #000000;
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+    </head>
+
+
+    
+    <body>
+        Id del dibujo:<input id="dibujo" type="text"/>
+        <button onclick="app.conectar($('#dibujo').val())">Conectarse</button>
+        </br>
+        <h3>Solo haz click en el canvas para digitar un punto</h3>
+        </br>
+        <canvas id="canvas" width="800" height="600" class="canvas"></canvas>
+    </body>
+</html>

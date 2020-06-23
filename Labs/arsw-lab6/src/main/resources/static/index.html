@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Blueprints</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/17865e5c4387501be27eee30530db18f?family=CavoliniW15-CondensedBoldIt"
+          rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/apimock.js"></script>
+    <script src="js/apiclient.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <style>
+    .grid-container {
+        display: grid;
+        font-family: "CavoliniW15-CondensedBoldIt";
+        grid-column-gap: 60px;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        text-indent:30px;
+    }
+    .body {
+        background-color: #B8DAF0;
+    }
+    canvas {
+          touch-action: none;
+    }
+
+    </style>
+    <h1 style="font-size:300%; font-family: 'CavoliniW15-CondensedBoldIt'; "> Blueprints </h1>
+</head>
+<body class="body">
+<p>
+</p>
+
+<label for="autor" style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'; text-indent:30px;"> Author</label>
+<input type="text" id="autor" placeholder="Nombre del autor"
+       style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'"/>
+<input type="button" value="Get Blueprints" id="button"
+       class="btn btn-primary" style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'" onclick="app.getBlueprintsByAuthor(true)"/>
+
+
+<div class="grid-container">
+    <div class="grid-item">
+        <h2 id="name" style="font-size:200%" ;>Author´s Blueprints:</h2>
+        <table class="table ">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Blueprint Name</th>
+                <th scope="col">Number of Points</th>
+                <th scope="col">Open</th>
+            </tr>
+            </thead>
+        </table>
+        <p id="total" style="font-size:200%" ;>Total user points:</p>
+    </div>
+    <div class="grid-item" id="myCanvas">
+        <input type="button" value="Create new Blueprint" id="create"
+               class="btn btn-primary" style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'" onclick="app.init()">
+        <input type="text" id="createname" placeholder="Nombre del nuevo plano"
+               style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'"/>
+        </input>
+        <p id="bpname" style="font-size:200%" ;>Current Blueprint:</p>
+        <canvas id="canvas" width="600" height="400" style="border:1px solid #000000;"></canvas>
+        </br>
+        <input type="button" value="Save/Update" id="saveOrUpdate"
+               class="btn btn-primary" style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'" onclick="app.saveOrUpdate()"/>
+        <input type="button" value="Edit" id="edit"
+               class="btn btn-primary" style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'" onclick="app.editBluePrint()"/>
+        <input type="button" value="Delete" id="delete"
+               class="btn btn-primary" style="font-size:100%; font-family: 'CavoliniW15-CondensedBoldIt'" onclick="app.deleteBlueprint()"/>
+    </div>
+</div>
+
+</body>
+</html>
