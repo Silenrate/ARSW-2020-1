@@ -10,21 +10,21 @@
 
 Para compilar la aplicacion por medio de Maven es necesario abrir la consola de comandos, ubicarse en la carpeta donde tenemos la aplicacion, en este caso, la carpeta es "BBP_FORMULA\PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA" y aplicar el siguiente comando:
 
-![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnPackage.PNG)
+![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnPackage.PNG)
 
 Y como resultado obtendremos lo siguiente:
 
-![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnPackageResult.PNG)
+![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnPackageResult.PNG)
 
 #### Run instructions
 
 La ejecucion de una aplicacion por medio de Maven consiste, al igual que la compilación, ubicarse primeramente en la carpeta de la aplicación y abrir la consola de comandos, seguidamente escribir el siguiente comando:
 
-![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnExec.PNG)
+![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnExec.PNG)
 
 Y como resultado de la primera ejecucion se descargarán dependencias, plugins, etc, y ejecutará el main del programa:
 
-![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnExecResult.PNG)
+![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnExecResult.PNG)
 
 #### Part I - Introduction to Java Threads
 
@@ -34,23 +34,23 @@ La diferencia entre usar el metodo run y el metodo start fue el orden de salida 
  
  #### CON 1 HILO:
  
- ![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/1%20hilo.png)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/1%20hilo.png)
  
  #### CON 4 HILOS:
  
- ![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/Con%204%20hilos.png)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/Con%204%20hilos.png)
  
  #### CON 8 HILOS:
  
- ![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/Con%208%20hilos.png)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/Con%208%20hilos.png)
  
  #### CON 200 HILOS:
  
- ![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/Con%20200%20hilos.PNG)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/Con%20200%20hilos.PNG)
  
  #### CON 500 HILOS:
  
- ![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/Con%20500%20hilos.PNG)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/Con%20500%20hilos.PNG)
  
  #### TABLA - HILOS VS TIEMPO
  
@@ -82,23 +82,23 @@ R: Debería mejorar porque no hay schedule que interrumpa los procesos y cada ma
 
 Para compilar la aplicacion por medio de Maven es necesario abrir la consola de comandos, ubicarse en la carpeta donde tenemos la aplicacion, en este caso, la carpeta es "CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE\parte1" y aplicar el siguiente comando:
 
-![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnPackage2.PNG)
+![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnPackage2.PNG)
 
 Y como resultado obtendremos lo siguiente:
 
-![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnPackageResult2.PNG)
+![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnPackageResult2.PNG)
 
 #### Run instructions
 
 La ejecucion de una aplicacion por medio de Maven consiste, al igual que la compilación, ubicarse primeramente en la carpeta de la aplicación y abrir la consola de comandos, seguidamente escribir el siguiente comando:
 
-![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnExec2.PNG)
+![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnExec2.PNG)
 
 Y como resultado de la primera ejecucion se descargarán dependencias, plugins, etc, y ejecutará el main del programa:
 
- ![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/mvnExecResult2.PNG)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/mvnExecResult2.PNG)
  
  #### Part I
  
- ![](https://github.com/Silenrate/arsw-lab1/blob/master/Images/Cores.png)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab1/Images/Cores.png)
  
