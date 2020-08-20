@@ -6,7 +6,7 @@
  
  ## Parte 1
  
- ![](https://github.com/Silenrate/arsw-lab2/blob/master/images/CPU1.PNG)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab2/images/CPU1.PNG)
  
  1) Why is this consumption? 
  
@@ -18,11 +18,11 @@
  
  2)
  
- ![](https://github.com/Silenrate/arsw-lab2/blob/master/images/CPU2.PNG)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab2/images/CPU2.PNG)
  
  3)
  
- ![](https://github.com/Silenrate/arsw-lab2/blob/master/images/CPU3.PNG)
+ ![](https://github.com/Silenrate/ARSW-2020-1/blob/master/Labs/arsw-lab2/images/CPU3.PNG)
  
  ## Parte 2
  
